@@ -1,8 +1,8 @@
-name: # {your name}-test or some other name that describes the workflow
+name: abheek-test # {your name}-test or some other name that describes the workflow
       # generally the name corresponds to the name of the file, but it can
       # always be different.
 
-on:
+on: push
   # when should this run 🤔?
   # use the docs to figure out how to trigger a workflow
 
@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: print hello
+        run: echo 'hello'
       ###################
       # EXAMPLE STEP
       ###################
